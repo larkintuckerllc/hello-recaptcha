@@ -5,6 +5,7 @@ export default ({
   firstName,
   lastName,
   email,
+  gRecaptchaResponse,
   password,
   signupType,
 }) => {
@@ -13,6 +14,7 @@ export default ({
       'first_name': firstName,
       'last_name': lastName,
       'email': email,
+      'g-recaptcha-response': gRecaptchaResponse,
       'password': password,
       'signup-type': signupType,
     }),

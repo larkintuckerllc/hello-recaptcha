@@ -36,5 +36,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript">
+      window.recaptchaReady = false;
+      var onloadCallback = function() {
+        window.recaptchaReady = true;
+      };
+   </script>
+   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+   </script>
   </body>
 </html>
